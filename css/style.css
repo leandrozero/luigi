@@ -1,0 +1,588 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    }
+    
+    h2{
+        font-family: 'Caprasimo', cursive;
+    }
+    
+    p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    /*----HEADER----*/
+    header {
+        background-color: rgb(0, 0, 0);
+        top: 0;
+        width: 100%;
+        height: 90px;
+        position: sticky;
+        z-index: 1;
+        }
+    
+    header nav ul{
+        list-style: none;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;   
+        flex-direction: row; 
+    }
+    
+    header nav ul li{
+        margin: 20px 60px 20px 60px;
+        font-size: 20px;
+    }
+    
+    header nav ul li a{
+        text-decoration: none;
+        color: rgb(216, 211, 211);
+    }
+
+    header nav ul li a:hover{
+        animation-name: color;
+        animation-duration: 0.5s;
+        animation-fill-mode:forwards;
+    }
+
+    @keyframes color{
+        from{
+            color:rgb(216, 211, 211);
+        }
+
+        to{
+            color: green;
+        }
+    }
+    
+    header nav ul li img{
+        width: 60px;
+        height: 60px;
+    }
+    
+    /*----MAIN----*/
+    .hero {
+    width: 100%;
+    height: 100vh;
+    background-image:url("../img/fondo.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    }
+    
+    .flex{
+    display: flex;
+    justify-content:center;
+    }
+    
+    section div div h1{
+        font-size: 80px;
+        font-style: italic;
+        letter-spacing: 5px;
+        margin-bottom: 50px;
+    }
+    
+    
+    .hero div div h1{
+        color: green;
+    }
+    
+    .hero div h1 span {
+        color: whitesmoke;
+    }
+    
+    .hero div h1 .tituloColor{
+    color: red;
+    }
+    
+    main h2{
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    margin: 45px 0px 45px 0px;
+    }
+    
+    .historia {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 600px;
+        font-size: 25px;
+    }
+    
+    .historia div p{
+        margin-bottom: 30px;
+    }
+    
+    .negrita {
+        font-weight:bolder;
+    }
+    
+    .video {
+        margin-top: 20px;
+        text-align: center;
+        border-radius: 15px;
+    }
+    
+    .subrayado {
+        font-size: 30px;
+        text-align: center;
+        text-decoration:underline;
+    }
+    
+    .locales{
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        gap: 20px;
+    }
+    
+    .comercio{
+        border: 3px solid black;
+        background-color:rgb(183, 187, 185) ;
+        border-radius: 15px;
+        width: 320px;
+        height: 450px;
+        text-align: center;
+    }
+    
+    .comercio div h4{
+        margin-bottom: 15px;
+    }
+    
+    .comercio div p{
+        margin-bottom: 15px;
+    }
+    
+    iframe {
+        width: 300px;
+        height: 280px;
+        border-radius: 10px;
+    }
+    
+    main p{
+        color: black;
+    }
+    
+    .hero div p{
+        color: whitesmoke;
+    }
+    
+    .productos div h3 {
+        color: black;
+        font-size: 40px;
+        height: 50px;
+        margin: 45px 0px 45px 0px;
+        background-color: rgb(204, 221, 51);
+        text-align: center;   
+    }
+    
+    div h4{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5px;
+    }
+    
+    .menu{
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+    }
+    
+    .productos div div img{
+        width: 250px;
+        height: 250px;
+        border-radius: 20px;
+    }
+
+    .productos div div img:hover{
+        animation-name: img;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes img{
+        from{
+            transform:scale(1);
+        }
+
+        to{
+            transform:scale(0.95);
+        }
+    }
+    
+    .trabajo{
+        font-size: 22px;
+    }
+    
+    .trabajo div img{
+        width: 450px;
+        height: 450px;
+        border-radius: 20px;
+    }
+    
+    .trabajo-izq{
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+        
+    }
+    
+    .trabajo-p{
+        width: 40%;
+    }
+    
+    .trabajo-der{
+            display: flex;
+            align-items: center;
+            justify-content:space-evenly; 
+            flex-direction: row-reverse;
+    }
+    
+    .contacto h3{
+        text-transform: uppercase;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 40px;
+        letter-spacing: 3px;
+        padding: 30px;
+        font-weight: bolder;
+    }
+    
+    .contacto p {
+        font-size: 20px;
+        padding: 50px;
+    }
+    
+    .contacto div{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+    }
+    
+    form{   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 800px;
+        border: 3px solid rgba(0, 0, 0, 0.185);
+        border-radius: 7px;
+        padding: 15px;
+    }
+    
+    #nombre, #email, #consulta, #comentarios{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 10px;
+        height: 45px;
+        width: 700px;
+    }
+    
+    #comentarios{
+        min-width: 700px;
+        max-width: 700px;
+        height: 100px;
+        min-height: 100px;
+        max-height: 200px;
+    }
+    
+    button{
+        padding: 10px;
+        width: 100px;
+        text-align: center;
+        border-radius: 5px;
+        background-color: black;
+        color: rgb(216, 211, 211);
+    }
+    
+    button:active{
+        animation-name: cambioColor ;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    
+    @keyframes cambioColor{
+        0%{
+            background-color: black;
+            color: rgb(216, 211, 211);
+            opacity: 0.5;
+        }
+        100%{
+    background-color: rgb(103, 103, 146);
+    color: rgb(216, 211, 211);
+    opacity: 1;
+        }
+    }
+    /*----FOOTER----*/
+    
+    footer{
+        grid-area: footer;
+        background-color: black;
+    }
+    
+    footer div{
+        display: flex;
+        align-items:center;
+        justify-content:space-around;
+        flex-direction: row;
+        color: rgb(216, 211, 211);
+        padding: 25px;
+    }
+    
+    .copyright{
+        padding: 5px;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    footer div a img{
+        width: 35px;
+        height: 35px;
+    }
+
+    @media screen and (max-width:1650px){
+        .productos div div img{
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    @media screen and (max-width:1200px){
+        header nav ul li{
+            margin: 20px;
+        }
+
+        header nav ul li img{
+            width: 50px;
+            height: 50px;
+        }
+
+        .productos div div img{
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    @media screen and (max-width:850px){
+
+    header{
+        position:static;
+    }
+
+    .historia{
+        font-size: 18px;
+    }
+
+    iframe {
+        height: 270px;
+    }
+
+    .locales{
+        flex-direction: column;
+    }
+
+    .menu{
+        flex-direction: column;
+    }
+
+    .productos div h3 {
+        margin: 30px 0px 30px 0px;   
+    }
+
+    div h4{
+        margin: 10px;
+    }
+
+    .trabajo-p{
+        padding:15px 0px 15px 0px;
+    }
+
+    .trabajo-izq{
+        flex-direction: column;
+    }
+
+    .trabajo-der{
+    flex-direction: column;
+    }
+
+    form{
+    width: 700px;
+    }
+
+    #nombre, #email, #consulta, #comentarios{
+        width: 650px;
+    }
+    
+    #comentarios{
+        min-width: 650px;
+        max-width: 650px;
+    }
+    }
+
+    @media screen and (max-width:700px){
+        header nav ul li{
+            font-size: 15px;
+        }
+
+        .historia{
+            font-size: 15px;
+        }
+
+        .video{
+            height: 250px;
+        }
+
+        .trabajo-p{
+            width: 70%;
+        }
+
+        form{
+            width: 550px;
+            }
+        
+        #nombre, #email, #consulta, #comentarios{
+            width: 500px;
+            }
+            
+        #comentarios{
+            min-width: 500px;
+            max-width: 500px;
+            }
+        }
+
+    @media screen and (max-width:600px){
+        div header nav ul li a img{
+            display: none;
+        }    
+        header nav ul li{
+            margin-top: 35px;
+        }
+        .hero{
+        background-attachment:local;
+        }
+        }
+
+    @media screen and (max-width:550px){
+        header{
+            height: auto;
+        }
+        header nav ul{
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        header nav ul li{
+            margin: 5px;
+        }
+
+        .p-tamaño{
+            font-size: 10px;
+        }
+
+        main h2{
+            font-size: 35px;
+        }
+
+        .historia{
+            font-size: 12px;
+        }
+
+        .video{
+            height: 180px;
+        }
+
+        .productos div div img{
+            width: 280px;
+            height: 280px;
+        }
+        
+        .trabajo-p{
+            width: 65%;
+            font-size: 18px;
+        }
+
+        .trabajo div img{
+            width: 280px;
+            height: 280px;
+        }
+
+        .contacto h3{
+            font-size: 25px;
+            padding: 10px;
+        }
+
+        .contacto p {
+            font-size: 15px;
+            padding: 30px;
+        }
+
+        form{
+            width: 350px;
+            }
+
+        #nombre, #email, #consulta, #comentarios{
+            width: 300px;
+            }
+            
+        #comentarios{
+            min-width: 300px;
+            max-width: 300px;
+            }
+
+            .copyright{
+                font-size: 15px;
+            }
+            
+            footer div a img{
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+    @media screen and (max-width:350px){
+        .p-tamaño{
+            font-size: 9px;
+        }
+
+        .comercio{
+            width: 300px;
+            height: 430px;
+        }
+
+        iframe {
+        height: 240px;
+        width: 280px;
+        }
+
+    form{
+        width: 300px;
+        }
+
+    #nombre, #email, #consulta, #comentarios{
+        width: 250px;
+        }
+        
+    #comentarios{
+        min-width: 250px;
+        max-width: 250px;
+        }
+
+        .copyright{
+            font-size: 13px;
+        }
+        }
